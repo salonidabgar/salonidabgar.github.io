@@ -45,13 +45,15 @@ header p {
     height: 8px;
     background: #e9ecef;
     border-radius: 4px;
-    margin-top: 1em;
+    margin: 1em auto;
+    width: 80%;
 }
 
 .skill-rating-fill {
     height: 100%;
     background: #007bff;
     border-radius: 4px;
+    transition: width 0.3s ease;
 }
 
 /* Timeline Styles */
@@ -133,4 +135,74 @@ button:hover {
     body {
         padding: 15px;
     }
+}
+
+/* Skills Section Specific Styles */
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.skills-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.skills-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #007bff, transparent);
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.code-icon {
+    padding: 0 2em;
+    color: #007bff;
+    font-size: 2em;
+}
+
+.skills-category {
+    font-size: 1.8em;
+    margin: 2em 0;
+    color: #333;
+}
+
+.skill-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item h4 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.skill-tags {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #e9ecef;
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #007bff;
 }
